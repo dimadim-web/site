@@ -1,0 +1,313 @@
+/* Resetează marginile și padding-urile implicite ale elementelor */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.test{
+    text-align: justify;
+}
+
+.text{
+    font-family: 'Montserrat', ;
+
+font-style: italic;
+}
+/* Stiluri pentru body */
+body {
+    font-family: 'Times new Roman';
+}
+
+/* Stiluri pentru header */
+header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 55%; /* Procentaj pentru a face imaginea responsive */
+
+    margin-left: 13%; /* Procentaj pentru a face marginile responsive */
+}
+
+/* Stiluri pentru logo */
+.logo img {
+    width: 125px;
+}
+
+/* Stiluri pentru meniul de navigare */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Conținutul cu imagine */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+
+}
+
+/* Container pentru imagine */
+.image-container {
+    position: relative; /* Pentru a permite poziționarea absolută a elementelor interne */
+    width: 100%; /* Lățimea completă a containerului */
+    height: 30vh; /* Înălțimea fixă a imaginii de fundal în unități vh */
+    overflow: hidden; /* Ascunde părțile imaginii care depășesc containerul */
+}
+
+.image-container img {
+    width: 100%; /* Imaginea ocupă toată lățimea containerului */
+    height: 100%; /* Imaginea ocupă toată înălțimea containerului */
+    object-fit: cover; /* Menține proporțiile imaginii */
+}
+
+/* Citatul plasat pe imagine */
+.quote-on-image {
+    position: absolute; /* Poziționează citatul în mod absolut față de container */
+    top: 50%; /* Poziționează citatul la mijlocul imaginii */
+    left: 50%; /* Poziționează citatul la mijlocul imaginii */
+    transform: translate(-50%, -50%); /* Centrează citatul atât pe orizontală cât și pe verticală */
+    font-size: 1.5em;
+    font-style: italic;
+    color: #FFFFFF; /* Schimbă culoarea textului în alb pentru contrast */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundal semi-transparent pentru vizibilitate */
+    padding: 10px 20px; /* Spațiere interioară */
+    border-radius: 8px;
+    width: 80%; /* Lățimea citatului pentru a se încadra frumos */
+}
+/* Citatul plasat pe imagine */
+.quote-on-image1 {
+    position: absolute; /* Poziționează citatul în mod absolut față de container */
+    top: 50%; /* Poziționează citatul la mijlocul imaginii */
+    left: 50%; /* Poziționează citatul la mijlocul imaginii */
+    transform: translate(-50%, -50%); /* Centrează citatul atât pe orizontală cât și pe verticală */
+    font-size: 1.5em;
+    font-style: italic;
+    color: #FFFFFF; /* Schimbă culoarea textului în alb pentru contrast */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.692); /* Fundal semi-transparent pentru vizibilitate */
+    padding: 10px 20px; /* Spațiere interioară */
+    border-radius: 8px;
+    width: 30%; /* Lățimea citatului pentru a se încadra frumos */
+}
+.quote-on-image2 {
+    position: absolute; /* Poziționează citatul în mod absolut față de container */
+    top: 50%; /* Poziționează citatul la mijlocul imaginii */
+    left: 50%; /* Poziționează citatul la mijlocul imaginii */
+    transform: translate(-50%, -50%); /* Centrează citatul atât pe orizontală cât și pe verticală */
+    font-size: 1.5em;
+    font-style: italic;
+    color: #FFFFFF; /* Schimbă culoarea textului în alb pentru contrast */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.692); /* Fundal semi-transparent pentru vizibilitate */
+    padding: 10px 20px; /* Spațiere interioară */
+    border-radius: 8px;
+    width: 70%; /* Lățimea citatului pentru a se încadra frumos */
+}
+/* Continuarea paginii */
+.bottom-content {
+    display: flex; /* Folosim Flexbox pentru a alinia secțiunile */
+    justify-content: space-between; /* Spațiu liber între cele două secțiuni */
+    width: 74%; /* Lățime totală minus marginile */
+    margin: 0 auto; /* Centrarea containerului */
+    padding: 20px; /* Spațiu interior */
+}
+
+.bottom-content1 {
+    display: flex; /* Folosim Flexbox pentru a alinia secțiunile */
+    justify-content: space-between; /* Spațiu liber între cele două secțiuni */
+    width: 76%; /* Lățime totală minus marginile */
+    margin: 0 auto; /* Centrarea containerului */
+    padding:18px; /* Spațiu interior */
+}
+/* Secțiunea informativă */
+.info-section {
+    width: 70%; /* 50% din lățimea totală */
+}
+.info-section h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.info-section h2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.info-section1 {
+    width: 70%; /* 50% din lățimea totală */
+    padding-bottom: 12%;
+}
+/* Secțiunea cu butoane */
+.button-section {
+    width: 16%; /* 20% din lățimea totală */
+}
+
+/* Stiluri pentru butoane */
+.button-section ul {
+    list-style: none; /* Eliminăm stilul implicit al listei */
+    padding: 0; /* Eliminăm paddingul */
+}
+
+.button-section ul li {
+    margin-bottom: 10px; /* Distanță între butoane */
+}
+
+.button-section ul li a {
+    text-decoration: none; /* Fără subliniere */
+    color: #007BFF; /* Culoare albastră pentru butoane */
+    font-weight: bold; /* Font îngroșat pentru butoane */
+}
+/* Stiluri pentru secțiunea de blog */
+.blog-section {
+    width: 70%; /* Ocupă 70% din lățimea containerului principal */
+    padding-right: 20px; /* Spațiere pe partea dreaptă pentru a separa secțiunile */
+  
+}
+
+.blog-section h1 {
+    margin-bottom: 20px; /* Distanță între titlu și conținut */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.blog-post {
+    margin-bottom: 30px; /* Distanță între postările de blog */
+}
+
+.blog-post h3 a {
+    text-decoration: none; /* Elimină sublinierea pentru titlul articolului */
+    color: #007BFF; /* Culoare albastră pentru titlul articolului */
+    font-weight: bold; /* Îngroșarea titlului articolului */
+}
+
+.blog-post p {
+    margin-top: 5px; /* Distanță între titlul articolului și text */
+
+}
+
+/* Stiluri pentru secțiunea cu linkuri utile */
+.button-section {
+    width: 35%; /* Ocupă 35% din lățimea containerului */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button-section ul {
+    list-style: none; /* Elimină stilul implicit al listei */
+    padding: 0; /* Elimină paddingul implicit */
+}
+
+.button-section ul li {
+    margin-bottom: 10px; /* Distanță între elementele din listă */
+}
+
+.button-section ul li a {
+    text-decoration: none; /* Fără subliniere pentru linkuri */
+    color: #007BFF; /* Culoare albastră pentru linkuri */
+    font-weight: bold; /* Font îngroșat pentru linkuri */
+}
+/* Stiluri pentru secțiunea de contact */
+.contact-section {
+    width: 70%; /* Ocupă 70% din lățimea containerului principal */
+    padding-right: 20px; /* Spațiere pe partea dreaptă */
+}
+
+.contact-section h2 {
+    margin-bottom: 20px; /* Distanță între titlu și conținut */
+}
+
+.contact-section p {
+    margin-bottom: 15px; /* Distanță între paragrafe */
+    color: #555; /* Culoare gri pentru text */
+}
+
+
+/* Secțiunea formularului de contact */
+.contact-form-section {
+    width: 70%;
+    padding: 20px;
+
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Stiluri pentru inputuri și butoane */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Butonul de trimitere */
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Schimbă culoarea la hover */
+}
+
+/* Secțiunea de linkuri rapide */
+.button-section {
+    width: 25%;
+    padding: 20px;
+  
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Ajustări pentru mobile */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Schimbă direcția în coloană pe ecrane mici */
+        align-items: center; /* Centrează conținutul */
+    }
+
+    .contact-form-section,
+    .button-section {
+        width: 100%; /* Ambele secțiuni ocupă 100% din lățime pe ecrane mici */
+        margin-bottom: 20px; /* Adaugă un spațiu între secțiuni */
+    }
+}
+
+
+footer {
+    background-color: #6C4E31; /* Culoarea de fundal a footer-ului */
+    text-align: left; /* Centrarea textului în footer */
+    color: white; /* Culoarea textului */
+    width: 100%; /* Lățimea completă a footer-ului */
+    margin: 0; /* Elimină marginea */
+    padding: 10px 0; /* Spațiu interior */
+    position: relative; /* Poziționare normală pentru footer */
+    bottom: 0; /* Asigură că footer-ul este ancorat la baza paginii */
+}
